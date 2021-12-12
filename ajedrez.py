@@ -90,4 +90,22 @@ def movimientos(tablero):   # Creamos la funcion movimientos
                 # Cuando el valor de la fila y la columna es correcto, se cierra el bucle y continua el codigo
                 if filaI > 0 and filaI < 9 and columnaI > 0 and columnaI < 9:
                     break 
-                  
+
+    # Elaboramos un bucle que realizara el cambio de posicion            
+    while True:
+        recorrido = input("Elige las coordenadas a las que deseas mover tu ficha:")
+        recorrido = recorrido.split()
+        if len(recorrido) == 2:
+            filaE = recorrido[0]
+            columnaE = recorrido[1]
+            try:   # Mismo bucle anterior para la comprobacion de los datos introducidos por el usuario
+                filaE = int(filaE)
+                columnaE = int(columnaE)
+            except:
+                print("Elije unas coordenadas lógicas y posibles")
+                pass
+            else:
+                if filaE >0 and filaE < 9 and columnaE >0 and columnaE < 9 and recorrido != ficha:
+                    (tablero[filaE])[columnaE] = tablero[filaI][columnaI]
+                    (tablero[filaI][columnaI]) = " "
+                    break
