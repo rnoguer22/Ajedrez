@@ -76,3 +76,13 @@ def movimientos(tablero):   # Creamos la funcion movimientos
         if len(ficha) == 2:
             filaI = ficha[0]
             columnaI = ficha[1]
+            # De esta manera almacenamos la fila y la columna del movimiento por separado
+            try:
+                filaI = int(filaI)
+                columnaI = int(columnaI)  
+            except:
+                print("Elije unas coordenadas lógicas y posibles")
+                pass
+            else:
+                if filaI > 0 and filaI < 9 and columnaI > 0 and columnaI < 9:
+                    break   
