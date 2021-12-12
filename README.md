@@ -1,6 +1,6 @@
 # Ajedrez
 
-Pincha [aqui]() para acceder al link del repositorio
+Pincha [aqui](https://github.com/rnoguer22/Ajedrez.git) para acceder al link del repositorio
 
 Hemos resuelto la tarea del juego del ajedrez, tal y como nos pedia el enunciado del ejercicio
 
