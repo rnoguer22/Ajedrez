@@ -62,3 +62,9 @@ PEÓN_NEGRO = chr(0x265F)
 (tablero[2])[6] = PEÓN_NEGRO
 (tablero[2])[7] = PEÓN_NEGRO
 (tablero[2])[8] = PEÓN_NEGRO
+
+def print_tablero(tablero):  # Creamos una funcion para printear el tablero
+    for i in range(9):
+        print(tablero[i])
+        
+print_tablero(tablero)  # Llamamos a la funcion para asi printear el tablero de ajedrez
