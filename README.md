@@ -5,6 +5,7 @@ Pincha [aqui](https://github.com/rnoguer22/Ajedrez.git) para acceder al link del
 Hemos resuelto la tarea del juego del ajedrez, tal y como nos pedia el enunciado del ejercicio
 
 El diaframa de flujo del codigo es el siguiente:
+
 ![Diagrama_Ajedrez](https://user-images.githubusercontent.com/91721762/145732596-44a7d343-0df1-4503-a8f2-650dccfd43d2.png)
 
 A continuacion se muestra el codigo utlizado para la resolucion del ejercicio:
