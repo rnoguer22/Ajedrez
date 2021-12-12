@@ -113,3 +113,15 @@ def movimientos(tablero):   # Creamos la funcion movimientos
 # Creacion y apertura del fichero
 fichero = input("Elige un nombre para el fichero: ")
 f = open(fichero, "a+", encoding="utf-8")
+
+print_tablero(tablero)
+
+# Cracion de un bucle para poder jugar todas las veces que queramos
+continue_ = "s"
+while continue_ != "n":
+    print("Bueno venga vale seguimos jugando, nunca te cansas eh")
+    movimientos(tablero)
+    print_tablero(tablero)
+    continue_ = input("¿Quieres seguir jugando? (s/n): ")  
+else:
+    print("Por fin me dejas tranquilo, mañana seguimos...") 
