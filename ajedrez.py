@@ -78,11 +78,16 @@ def movimientos(tablero):   # Creamos la funcion movimientos
             columnaI = ficha[1]
             # De esta manera almacenamos la fila y la columna del movimiento por separado
             try:
+                # Comprobamos que el dato introducido por el usuario es correcto
+                # para ello han de ser numeros enteros
                 filaI = int(filaI)
                 columnaI = int(columnaI)  
             except:
                 print("Elije unas coordenadas lógicas y posibles")
                 pass
+                # De esta manera se repite el bucle hasta que el usuario introduzca el movimiento correctamente
             else:
+                # Cuando el valor de la fila y la columna es correcto, se cierra el bucle y continua el codigo
                 if filaI > 0 and filaI < 9 and columnaI > 0 and columnaI < 9:
-                    break   
+                    break 
+                  
