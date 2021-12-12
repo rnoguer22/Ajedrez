@@ -105,7 +105,7 @@ def movimientos(tablero):   # Creamos la funcion movimientos
                 print("Elije unas coordenadas lógicas y posibles")
                 pass
             else:
-                if filaE >0 and filaE < 9 and columnaE >0 and columnaE < 9 and recorrido != ficha:
+                if 0 < filaE < 9 and 0 < columnaE < 9 and recorrido != ficha:
                     (tablero[filaE])[columnaE] = tablero[filaI][columnaI]
                     (tablero[filaI][columnaI]) = " "
                     break
