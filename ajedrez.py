@@ -68,3 +68,11 @@ def print_tablero(tablero):  # Creamos una funcion para printear el tablero
         print(tablero[i])
         
 print_tablero(tablero)  # Llamamos a la funcion para asi printear el tablero de ajedrez
+
+def movimientos(tablero):   # Creamos la funcion movimientos
+    while True:
+        ficha = input("Elige la ficha que deseas mover seleccionando sus coordenadas por separado:")
+        ficha = ficha.split()
+        if len(ficha) == 2:
+            filaI = ficha[0]
+            columnaI = ficha[1]
