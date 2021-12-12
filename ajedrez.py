@@ -109,3 +109,7 @@ def movimientos(tablero):   # Creamos la funcion movimientos
                     (tablero[filaE])[columnaE] = tablero[filaI][columnaI]
                     (tablero[filaI][columnaI]) = " "
                     break
+
+# Creacion y apertura del fichero
+fichero = input("Elige un nombre para el fichero: ")
+f = open(fichero, "a+", encoding="utf-8")
